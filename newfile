@@ -1,5 +1,4 @@
 FROM centos
 RUN yum install httpd -y
-RUN ss -nlt
 EXPOSE 80
 CMD ["httpd","-DFOREGROUND"]
